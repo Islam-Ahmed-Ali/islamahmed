@@ -1,64 +1,111 @@
-body {
-    font-family: Arial, sans-serif;
+/* Make the page fill the viewport height */
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
+
+/* Ensure the main content expands to push footer down */
+main {
+    flex: 1;
+}
+
 header {
     background-color: #004080;
     color: white;
     padding: 10px 0;
     text-align: center;
 }
-section {
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-h1, h2 {
-    color: #004080;
-}
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul.contact-info li {
-    margin-bottom: 10px;
-}
-a {
-    color: #004080;
-    text-decoration: none;
-}
-footer {
-    background-color: #004080;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
 
 .profile-photo {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Makes the photo circular */
+    border-radius: 50%;
     display: block;
     margin: 0 auto;
     margin-top: 20px;
 }
 
+section {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #004080;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul.contact-info li, ul.links li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #004080;
+    text-decoration: none;
+}
+
+/* Footer sticks to the bottom */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* YouTube video layout */
 .video-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
-.video-container iframe {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+
+.video {
+    flex: 1 1 300px;
+    max-width: 500px;
+    text-align: center;
 }
 
+.video iframe {
+    width: 100%;
+    height: auto;
+}
+
+.video-description {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.view-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #003366;
+}
