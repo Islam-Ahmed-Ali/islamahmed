@@ -24,15 +24,6 @@ ul {
     padding: 0;
 }
 
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Makes the photo circular */
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
 ul.contact-info li {
     margin-bottom: 10px;
 }
@@ -49,3 +40,25 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the photo circular */
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
