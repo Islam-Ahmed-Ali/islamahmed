@@ -1,27 +1,203 @@
-/* Basic styling for section entries */
-.education-entry, .experience-entry {
-    margin-bottom: 20px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Islam A. Sayed | PhD Candidate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section with Profile Photo -->
+    <header>
+        <img src="assets/profile.jpg" alt="Profile Photo of Islam A. Sayed" class="profile-photo">
+        <h1>Islam A. Sayed</h1>
+        <p>PhD Candidate, Electrical & Computer Engineering</p>
+        <p>Kennesaw State University, Georgia, USA</p>
+    </header>
 
-h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #004080;
-}
+    <!-- Wrap main content in <main> -->
+    <main>
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a PhD candidate specializing in Electrical & Computer Engineering with a focus on Battery Management Systems, Energy Management Systems, and Control Systems for electric vehicles. My research integrates deep learning techniques with control applications to optimize energy distribution and battery state-of-charge estimation.
+            </p>
+        </section>
 
-.date {
-    font-style: italic;
-    color: #666;
-    font-size: 0.9em;
-}
+        <!-- Enhanced Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-entry">
+                <h3>PhD in Electrical & Computer Engineering</h3>
+                <p><strong>Kennesaw State University</strong>, Georgia, USA <span class="date">(January 2023 – Expected December 2025)</span></p>
+                <ul>
+                    <li>GPA: 4.0/4.0</li>
+                    <li>Thesis: <em>Advanced Energy Management Systems in Electric Vehicles</em></li>
+                    <li>Relevant Courses: Advanced Systems Engineering, Research Methods, Advanced Engineering Math</li>
+                </ul>
+            </div>
+            <div class="education-entry">
+                <h3>MS in Electrical Engineering</h3>
+                <p><strong>Cairo University</strong>, Egypt <span class="date">(October 2018 – October 2021)</span></p>
+                <ul>
+                    <li>GPA: 3.4/4.0</li>
+                    <li>Research Focus: Control Systems</li>
+                    <li>Thesis: <em>Applications of Model Predictive Control in Energy Conversion Systems</em></li>
+                </ul>
+            </div>
+            <div class="education-entry">
+                <h3>BS in Electrical Power & Machines Engineering</h3>
+                <p><strong>Cairo University</strong>, Egypt <span class="date">(October 2012 – June 2017)</span></p>
+                <ul>
+                    <li>Grade: Very Good with Honors (81%)</li>
+                    <li>Graduation Project: <em>Design & Implementation of Control System for Wheat Silos / Animal Feed Plant</em> (Grade: Excellent)</li>
+                </ul>
+            </div>
+        </section>
 
-/* Styling for lists in entries */
-.education-entry ul, .experience-entry ul {
-    list-style-type: disc;
-    margin: 5px 0 0 20px;
-    padding: 0;
-}
+        <!-- Research Interests Section -->
+        <section id="research-interests">
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Battery Management Systems (BMS)</li>
+                <li>Energy Management Systems (EMS)</li>
+                <li>Control Systems & Optimization Algorithms</li>
+                <li>Power Electronics & Electric Vehicles (EVs)</li>
+                <li>Deep Learning & Machine Learning for Control Applications</li>
+            </ul>
+        </section>
 
-ul li {
-    margin-bottom: 5px;
-}
+        <!-- Research and Teaching Experience Section -->
+        <section id="research-teaching-experience">
+            <h2>Research and Teaching Experience</h2>
+            <ul>
+                <li><strong>Graduate Research Assistant</strong>, Kennesaw State University, Georgia, USA <span class="date">(January 2023 – Present)</span>
+                    <ul>
+                        <li>Developed advanced energy management systems for electric vehicles utilizing deep learning and control algorithms.</li>
+                        <li>Focused on optimizing battery state-of-charge estimation using AI-aided Kalman filters.</li>
+                    </ul>
+                </li>
+                <li><strong>Research & Teaching Assistant (Part-Time)</strong>, Cairo University, Egypt <span class="date">(September 2018 – December 2021)</span>
+                    <ul>
+                        <li>Taught physics tutorials and labs for first-year engineering students.</li>
+                        <li>Supervised and evaluated student projects, including control system applications.</li>
+                        <li>Developed and published a Model Predictive Control (MPC)-based Power System Stabilizer.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Enhanced Professional Experience Section -->
+        <section id="professional-experience">
+            <h2>Professional Experience</h2>
+            <div class="experience-entry">
+                <h3>Automation Engineer</h3>
+                <p><strong>Sigma Misr Company</strong>, Cairo, Egypt <span class="date">(January 2022 – December 2022)</span></p>
+                <ul>
+                    <li>Founded and led the Industrial Automation department, introducing SCADA and IIOT software for real-time monitoring and control.</li>
+                    <li>Developed and implemented PLC and HMI systems for automated solutions in manufacturing environments.</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <h3>Electrical Technical Office Engineer</h3>
+                <p><strong>Sigma Misr Company</strong>, Cairo, Egypt <span class="date">(June 2019 – December 2021)</span></p>
+                <ul>
+                    <li>Provided electrical design solutions for hospitals, malls, and residential complexes, ensuring project specifications were met.</li>
+                    <li>Coordinated with architects and contractors to integrate electrical systems in large-scale projects.</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <h3>Automation Engineer (Intern)</h3>
+                <p><strong>AdvanSys T&C Company</strong>, Egypt <span class="date">(July 2018 – September 2018)</span></p>
+                <ul>
+                    <li>Designed and configured Building Management Systems (BMS) and Direct Digital Control (DDC) using Johnson Controls.</li>
+                    <li>Utilized FBD and communication protocols (BACnet, Modbus TCP/RTU) to streamline automation processes.</li>
+                </ul>
+            </div>
+            <div class="experience-entry">
+                <h3>Electrical Engineer (Intern)</h3>
+                <p><strong>Almourky Plastics Factory</strong>, Saudi Arabia <span class="date">(July 2016 – September 2016)</span></p>
+                <ul>
+                    <li>Assisted in the maintenance and operation of injection molding machines, ensuring production efficiency.</li>
+                    <li>Performed routine inspections and diagnostics to prevent mechanical breakdowns.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications">
+            <h2>Publications</h2>
+            <h3>Journal Articles</h3>
+            <ul>
+                <li><strong>Model Predictive Control Stabilization of a Power System Including a Wind Power Plant</strong>, Journal of Energy Systems, vol. 6, no. 2, 2022. <a href="https://doi.org/10.30521/jes.997307">[DOI: 10.30521/jes.997307]</a></li>
+            </ul>
+            <h3>Conference Presentations</h3>
+            <ul>
+                <li><strong>Neural Network Aided Kalman Filter for Battery State of Charge Estimation</strong> – IECON 2024 Conference, Chicago (November 2024)</li>
+            </ul>
+        </section>
+
+        <!-- Presentations Section -->
+        <section id="presentations">
+            <h2>Presentations</h2>
+            <ul>
+                <li><strong>How to Conduct Literature Research</strong>, Kennesaw State University, USA, 2023</li>
+                <li><strong>An Overview of Ant-Lion Optimization Algorithm</strong>, Cairo University, Egypt, 2019</li>
+            </ul>
+        </section>
+
+        <!-- Honors and Awards Section -->
+        <section id="honors-awards">
+            <h2>Honors and Awards</h2>
+            <ul>
+                <li>PhD Electrical & Computer Engineering Scholarship, Kennesaw State University, USA</li>
+                <li>Ranked among the top 10 students in the Electrical Power & Machines Engineering program at Cairo University, Egypt</li>
+            </ul>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="technical-skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Automation Design:</strong> PLC, HMI, SCADA, DCS, IIOT</li>
+                <li><strong>Embedded Systems:</strong> Model-Based Design, Embedded Software, Hardware Design</li>
+                <li><strong>Programming:</strong> Python, C/C++, MATLAB/Simulink, SQL, LaTeX</li>
+                <li><strong>Software Tools:</strong> Siemens TIA, Ignition SCADA, MySQL, AutoCAD, LTspice, Altium Designer</li>
+                <li><strong>Languages:</strong> English (Fluent), Arabic (Native), German (Intermediate)</li>
+            </ul>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            <p>Download my <a href="assets/IslamCV.pdf" target="_blank">CV (PDF)</a></p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <ul class="contact-info">
+                <li>Location: Marietta, Georgia, USA</li>
+                <li>Phone: +1 (404) 953-8220</li>
+                <li>Email: <a href="mailto:Islam.Ahmed94@yahoo.com">Islam.Ahmed94@yahoo.com</a></li>
+            </ul>
+
+            <h2>Find Me Online</h2>
+            <ul class="links">
+                <li><a href="https://www.linkedin.com/in/islamahmed94/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/Islam-Ahmed-Ali" target="_blank">GitHub</a></li>
+                <li><a href="https://scholar.google.com/citations?user=yhXkIsIAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+                <li><a href="https://www.researchgate.net/profile/Islam-Ali-17" target="_blank">ResearchGate</a></li>
+                <li><a href="https://orcid.org/0000-0002-4162-7702" target="_blank">ORCID</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer always at the bottom -->
+    <footer>
+        <p>© 2024 Islam A. Sayed. All rights reserved.</p>
+    </footer>
+</body>
+</html>
